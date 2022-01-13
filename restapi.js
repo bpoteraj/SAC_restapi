@@ -247,7 +247,11 @@
                         $.ajax({
                             url: restAPIURL,
                             type: 'POST',
-                            data: $.param({“jobType”:”DAFrameworkDataImport”,”name”:”E0DE6CE07B3CEFDC17002C060B78B4AB“,”description”:null,”recurrence”:null,”param”:{“mappingId”:”E0DE6CE07B3CEFDC17002C060B78B4AB“,”optParams”:{}},”status”:”STOPPED”}),
+                            
+                            data: $.jobType(”DAFrameworkDataImport”),
+                            data: $.name(”E0DE6CE07B3CEFDC17002C060B78B4AB“),
+                            data: $.param({“mappingId”:”E0DE6CE07B3CEFDC17002C060B78B4AB“, ”optParams”:{}}),
+                            data: $.status:”STOPPED”,
                             contentType: 'application/x-www-form-urlencoded',
                             success: function(data) {
                                 console.log(data);
