@@ -242,12 +242,13 @@
 
                         var partnernumber = oView.byId("input").getValue(); //"0004540866"
                         console.log(partnernumber);
-						console.log('bartek');
 
                         $.ajax({
                             url: restAPIURL,
                             type: 'POST',
-                            data: $.param({“jobType”:”DAFrameworkDataImport”,”name”:”E0DE6CE07B3CEFDC17002C060B78B4AB“,”description”:null,”recurrence”:null,”param”:{“mappingId”:”E0DE6CE07B3CEFDC17002C060B78B4AB“,”optParams”:{}},”status”:”STOPPED”}),
+                            data: $.param({
+                                "partnernumber": partnernumber
+                            }),
                             contentType: 'application/x-www-form-urlencoded',
                             success: function(data) {
                                 console.log(data);
