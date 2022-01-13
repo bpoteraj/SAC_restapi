@@ -247,9 +247,12 @@
                         $.ajax({
                             url: restAPIURL,
                             type: 'POST',
-                            
-                            data: $.param({jobType:'DAFrameworkDataImport',name:'E0DE6CE07B3CEFDC17002C060B78B4AB',description:null,recurrence:null,param:{mappingId:'0DE6CE07B3CEFDC17002C060B78B4AB',optParams:{}},status:'STOPPED'}),
-                            
+                            data: '{“jobType”:”DAFrameworkDataImport”,”name”:”F58CA15F78AA9039E200586F05E2BB93“,”description”:null,”recurrence”:null,”param”:{“mappingId”:”F48CA15F78AA9039E200586F05E2BB93“,”optParams”:{}},”status”:”STOPPED”}';
+                                                       
+                            // The contentType http header value.
+                            contentType: "application/json; charset=utf-8", 
+                            // Post data format.
+                            dataType: "json", 
                             success: function(data) {
                                 console.log(data);
                                 _score = data;
