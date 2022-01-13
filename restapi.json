@@ -34,7 +34,7 @@
     "restapiurl": {
       "type": "string",
       "description": "The REST API URL",
-      "default": "https://reqres.in/api/users/2"
+      "default": "https://pwc-polska-z.eu10.hcs.cloud.sap/sap/fpa/services/rest/fpa/dataintegration?action=runScheduledJob&tenant=Z"
     },
     "name": {
       "type": "string",
