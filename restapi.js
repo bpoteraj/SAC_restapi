@@ -242,7 +242,8 @@
 
                         var partnernumber = oView.byId("input").getValue(); //"0004540866"
                         console.log(partnernumber);
-						console.log("czesc Bartek");
+						console.log(partnernumber);
+						console.log(partnernumber);
 
                         $.ajax({
                             url: restAPIURL,
