@@ -33,7 +33,7 @@
             this._export_settings.name = "";
 
             this.addEventListener("click", event => {
-                console.log('click');
+                console.log('bartek kliknal');
             });
 
             this._firstConnection = 0;
