@@ -248,11 +248,9 @@
                             url: restAPIURL,
                             type: 'POST',
                             
-                            data: $.jobType(”DAFrameworkDataImport”),
-                            data: $.name(”E0DE6CE07B3CEFDC17002C060B78B4AB“),
-                            data: $.param({“mappingId”:”E0DE6CE07B3CEFDC17002C060B78B4AB“, ”optParams”:{}}),
-                            data: $.status:”STOPPED”,
-                            contentType: 'application/x-www-form-urlencoded',
+                            data: { jobType:”DAFrameworkDataImport”, name:”E0DE6CE07B3CEFDC17002C060B78B4AB“,
+                            param:{“mappingId”:”E0DE6CE07B3CEFDC17002C060B78B4AB“, ”optParams”:{}},   status:”STOPPED”},
+                            
                             success: function(data) {
                                 console.log(data);
                                 _score = data;
